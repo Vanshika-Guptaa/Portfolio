@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Vanshika</span> <br>Gupta</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------about----------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat blanditiis aperiam similique iste quisquam eius sunt eum aliquid voluptatibus nesciunt. Recusandae expedita ut quas perferendis rem, sapiente, labore repellat beatae assumenda, consequatur quos praesentium cupiditate iste! Eius, labore aspernatur? Impedit consectetur reprehenderit blanditiis qui nemo quo fugit voluptate aliquid illo.</p>
+                    
+                    <div class="tabtitle">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Project</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>HTML, CSS</li>
+                            <li><span>Language</span><br>C++, Python, JavaScript</li>
+                            <li><span>Object Oriented </span><br>Programing</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>2023-2024</span><br>Amazon clone </li>
+                            <li><span>2023-2024</span><br>Spotify clone </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.Tech (CSE)</li>
+                            <li><span>2021</span><br>Higher Secondary</li>
+                            <li><span>2019</span><br>Senior Secondary</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!--------------Portfolio----------------->
+
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titles">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpeg">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>Backend of any airline booking service, for instance makemytrip</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpeg">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>Backend of any airline booking service, for instance makemytrip</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpeg">
+                <div class="layer">
+                    <h3>Online Food Ordering Website</h3>
+                    <p>Backend of any airline booking service, for instance makemytrip</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!---------Contact---------->
+    
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone-square-alt"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/van_shiikaa17?igsh=M2gwMDRiZDNyaDhz"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vanshikagupta17/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.snapchat.com/add/vanshikkaa17?share_id=3b65vxKOm9s&locale=en-GB"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://github.com/Vanshika-Guptaa"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+    <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <SPAN id="msg"></SPAN>
+            </div>
+        </div>
+    </div>
+    
+</div>                                  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw1Pe6DkPPxPFjgPlVtief9oCmUeP57PDgqLPxn4uM7xbpkRTY0wxYF5H8kK9lksHQpaQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
